@@ -60,7 +60,6 @@
 
 .section {
     display: flex;                 /* Flexbox to align image and text side by side */
-    margin: 10px;
     align-items: center;
     justify-content: space-between;
 }

@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Section({ title, location, description, imageUrl, imageAlt }) {
+function ProjectSection({ title, description, imageUrl, imageAlt, tech }) {
     return (
         <div className="section">
             <img src={imageUrl} alt={imageAlt} className="section-image" />
             <div className="section-content">
-                <h5>{title}</h5>
-                <h7 className='subheader'>{location}</h7>
+                <h4>{title}</h4>
+                <h6 className='subheader'>{description}</h6>
                 <p>{description}</p>
             </div>
         </div>
     );
 }
 
-export default Section;
+export default ProjectSection;
