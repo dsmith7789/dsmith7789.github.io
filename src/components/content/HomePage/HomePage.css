@@ -14,19 +14,16 @@
     max-width: 150px;              /* Control the size of the image */
     height: auto;                  /* Maintain aspect ratio */
     margin-right: 20px;            /* Space between the image and text */
-    margin-left: 100px;
+    margin-left: 25%;
     border-radius: 50%;
     object-fit: cover;
 }
 
 /* Text inside the banner */
 .banner-text {
-    flex: 1;                       /* Allow the text to take up available space */
-    text-align: right;             /* Align text to the right */
+    flex-basis: 25%;                       /* Allow the text to take up available space */
     display: flex;                 /* Flexbox for the text container */
     flex-direction: column;        /* Stack the text vertically */
-    justify-content: center;       /* Center the text vertically */
-    margin-right: 100px;
 }
 
 .banner-text h1 {
@@ -37,6 +34,49 @@
 .banner-text p {
     margin: 5px 0;                 /* Adjust the spacing of the paragraph */
     font-size: 16px;               /* Adjust the font size */
+}
+
+/* Button below the text */
+.banner-button {
+    width: 25%;                   /* Button width is 50% of the text container */
+    margin-top: 20px;             /* Add some space above the button */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.home-section {
+    padding: 20px;                 /* Padding inside the banner */
+    margin: 20px;           /* Space between the banner and the rest of the content */
+}
+
+.subheader {
+    color: darkgrey;
+}
+
+.section {
+    display: flex;                 /* Flexbox to align image and text side by side */
+    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-content {
+    flex-basis: 92%;                       /* Allow the text to take up available space */
+    display: flex;                 /* Flexbox for the text container */
+    flex-direction: column;        /* Stack the text vertically */
+}
+
+.section-image {
+    height: auto;
+    width: 50px;
+    max-width: 75px;              /* Control the size of the image */
+    max-height: 75px;                  /* Maintain aspect ratio */
+    margin-right: 20px;            /* Space between the image and text */
 }
 
 /* For smaller screens */

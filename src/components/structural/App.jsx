@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Layout from './Layout';
 
 import Home from '../content/HomePage/Home';
 import NoMatch from '../content/NoMatch';
-import Projects from '../content/Projects';
+import Projects from '../content/ProjectPage/Projects';
 
 function App() {
     return (

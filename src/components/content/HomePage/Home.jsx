@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TopBanner from "./TopBanner";
 import './HomePage.css';
+import About from "./About";
+import Experience from "./Experience";
+import Education from "./Education";
 
 function Home() {
+    useEffect(() => {
+        document.title = "Home";
+    }, []);
+
     return <div>
-        <TopBanner/>
-        <h1>Hi, I'm Dante Smith!</h1>
-        <p>Please be mindful about what you post, this is a chat server shared by every student in CS571.</p>
-        <p>As a result, you may see others' posts appear while you are working, this is perfectly normal!</p>
-        <p>All content that you post can be linked back to you through your referral code.</p>
-        <p>Click on a link to get started.</p>
+        <TopBanner />
+        <About />
+        <Experience />
+        <Education />
     </div>
 }
 
