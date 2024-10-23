@@ -1,0 +1,19 @@
+.tag {
+    background-color: blue;   /* Blue background */
+    color: white;             /* White text color */
+    margin: 2px;
+    font-size: 10px;          /* Small font size */
+    display: inline-block;            /* Flexbox to center text */
+    border-radius: 2px;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    text-align: center;       /* Ensure text is centered */
+    min-width: 40px;
+    height: 18px;
+  }
+
+  .link {
+    color: orange;             /* White text color */
+    font-size: 14px;          /* Small font size */
+    margin: 2px;
+  }

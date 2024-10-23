@@ -62,12 +62,20 @@
     display: flex;                 /* Flexbox to align image and text side by side */
     align-items: center;
     justify-content: space-between;
+    margin: 20px;
+    margin-bottom: 40px;
 }
 
 .section-content {
     flex-basis: 92%;                       /* Allow the text to take up available space */
     display: flex;                 /* Flexbox for the text container */
     flex-direction: column;        /* Stack the text vertically */
+}
+
+.section-description {
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    line-height: 0.8;
 }
 
 .section-image {
