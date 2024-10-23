@@ -33,7 +33,7 @@ function Projects() {
             
                 I was the only group member for this project.
             `)}
-            repoUrl="https://google.com"
+            repoUrl="https://github.com/dsmith7789/CS784_Project"
             imageUrl=""
             imageAlt="Test Alt"
             tech={["Python", "Java"]}
