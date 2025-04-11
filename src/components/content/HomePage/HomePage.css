@@ -58,6 +58,11 @@
     color: darkgrey;
 }
 
+.highlights {
+    font-style: italic;
+    font-size: small;
+}
+
 .section {
     display: flex;                 /* Flexbox to align image and text side by side */
     align-items: center;

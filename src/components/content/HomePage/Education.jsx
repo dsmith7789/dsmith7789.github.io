@@ -11,6 +11,32 @@ function Education() {
             description="M.S., Computer Science"
             imageUrl="/images/w_crest.jpg"
             imageAlt="UW-Madison"
+            highlights={
+                <>
+                Relevant Courses: 
+                Object Oriented Programming, 
+                Data Structures and Algorithms, 
+                Database Management Systems, 
+                Operating Systems, 
+                Computer Networks, 
+                Artificial Intelligence, 
+                Information Security, 
+                Big Data Systems, 
+                Building User Interfaces
+                </>
+            }
+            tech={[
+                "Python", 
+                "Java",
+                "C",
+                "C++",
+                "React.js",
+                "Docker",
+                "Pytorch",
+                "Spark",
+                "Cassandra",
+                "Kafka"
+            ]}
         />
         <Section 
             title="University of Cincinnati"
@@ -18,6 +44,15 @@ function Education() {
             description="B.S., Chemical Engineering"
             imageUrl="/images/uc_crest.png"
             imageAlt="Cincinnati"
+            highlights={
+                <>
+                Relevant Experience: 
+                Teaching Assistant for Engineering Foundations and Engineering Models classes
+                </>
+            }
+            tech={[
+                "MATLAB"
+            ]}
         />
     </div>
 }
