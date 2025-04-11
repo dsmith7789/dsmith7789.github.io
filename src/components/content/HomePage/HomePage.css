@@ -1,0 +1,110 @@
+/* Banner styles */
+.banner {
+    display: flex;                 /* Flexbox to align image and text side by side */
+    align-items: center;           /* Vertically center content */
+    justify-content: space-between;/* Push the text to the right */
+    background-color: #f0f0f0;     /* Light grey background */
+    padding: 20px;                 /* Padding inside the banner */
+    border-bottom: 1px solid #ddd; /* Optional: Add a light border at the bottom */
+    margin-bottom: 20px;           /* Space between the banner and the rest of the content */
+}
+
+/* Image inside the banner */
+.banner-image {
+    max-width: 150px;              /* Control the size of the image */
+    height: auto;                  /* Maintain aspect ratio */
+    margin-right: 20px;            /* Space between the image and text */
+    margin-left: 25%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Text inside the banner */
+.banner-text {
+    flex-basis: 25%;                       /* Allow the text to take up available space */
+    display: flex;                 /* Flexbox for the text container */
+    flex-direction: column;        /* Stack the text vertically */
+}
+
+.banner-text h1 {
+    margin: 0;                     /* Remove default margin */
+    font-size: 24px;               /* Adjust the size of the heading */
+}
+
+.banner-text p {
+    margin: 5px 0;                 /* Adjust the spacing of the paragraph */
+    font-size: 16px;               /* Adjust the font size */
+}
+
+/* Button below the text */
+.banner-button {
+    width: 25%;                   /* Button width is 50% of the text container */
+    margin-top: 20px;             /* Add some space above the button */
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.home-section {
+    padding: 20px;                 /* Padding inside the banner */
+    margin: 20px;           /* Space between the banner and the rest of the content */
+}
+
+.subheader {
+    color: darkgrey;
+}
+
+.highlights {
+    font-style: italic;
+    font-size: small;
+}
+
+.section {
+    display: flex;                 /* Flexbox to align image and text side by side */
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.section-content {
+    flex-basis: 92%;                       /* Allow the text to take up available space */
+    display: flex;                 /* Flexbox for the text container */
+    flex-direction: column;        /* Stack the text vertically */
+}
+
+.section-description {
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+    line-height: 0.8;
+}
+
+.section-image {
+    height: auto;
+    width: 50px;
+    max-width: 75px;              /* Control the size of the image */
+    max-height: 75px;                  /* Maintain aspect ratio */
+    margin-right: 20px;            /* Space between the image and text */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;    /* Stack the image and text vertically on small screens */
+        text-align: center;        /* Center text */
+    }
+
+    .banner-image {
+        margin-right: 0;
+        margin-bottom: 20px;       /* Add spacing between the image and text */
+        max-width: 100px;          /* Resize the image */
+    }
+
+    .banner-text {
+        text-align: center;        /* Center the text */
+    }
+}
