@@ -17,6 +17,7 @@ function Layout(props) {
                     <Nav>
                         <Nav.Link as={Link} to="/">Home</Nav.Link>
                         <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
+                        <Nav.Link href="https://dsmith7789.github.io/blog/">Blog</Nav.Link>
                         <Nav className="ms-auto d-flex align-items-center">
                             <div className="vr mx-3"></div> {/* Divider with some margin */}
                             <Nav.Link href="https://github.com/dsmith7789" target="_blank">
