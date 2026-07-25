@@ -1,6 +1,54 @@
-/* Banner styles */
 .project-banner {
-    background-color: #f0f0f0;     /* Light grey background */
-    padding: 20px;                 /* Padding inside the banner */
-    border-bottom: 1px solid #ddd; /* Optional: Add a light border at the bottom */
+    background:
+        linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(194, 109, 58, 0.08)),
+        var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin: 2.5rem 0 2rem;
+    padding: 2.5rem;
+}
+
+.project-banner h1 {
+    color: var(--ink);
+    font-size: clamp(2.25rem, 6vw, 4.5rem);
+    font-weight: 850;
+    line-height: 1;
+    margin: 0;
+}
+
+.project-banner p:not(.eyebrow) {
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin: 1rem 0 0;
+    max-width: 760px;
+}
+
+.project-card {
+    align-items: flex-start;
+}
+
+.project-card .section-image {
+    height: 132px;
+    width: 180px;
+}
+
+.project-card .link {
+    display: inline-flex;
+    font-weight: 760;
+    margin-bottom: 0.7rem;
+}
+
+@media (max-width: 640px) {
+    .project-banner {
+        margin-top: 1.25rem;
+        padding: 1.5rem;
+    }
+
+    .project-card .section-image {
+        height: auto;
+        max-height: 150px;
+        width: 100%;
+    }
 }

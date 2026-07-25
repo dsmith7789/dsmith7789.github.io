@@ -10,7 +10,7 @@ function Projects() {
     }, []);
 
     return (
-    <div>
+    <div className="page-content">
         <TopBanner />
         <ProjectSection
             title="Comparison of Centralized and Decentralized Storage Services"

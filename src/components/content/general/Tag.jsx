@@ -3,9 +3,7 @@ import './general.css';
 
 function Tag({ content }) {
     return (
-        <div className="tag">
-            <p>{content}</p>
-        </div>
+        <span className="tag">{content}</span>
     );
 }
 

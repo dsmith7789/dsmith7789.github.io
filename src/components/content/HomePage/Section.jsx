@@ -6,15 +6,15 @@ function Section({ title, location, description, imageUrl, imageAlt, highlights,
         <div className="section">
             <img src={imageUrl} alt={imageAlt} className="section-image" />
             <div className="section-content">
-                <h5>{title}</h5>
-                <h7 className='subheader'>{location}</h7>
-                <p>{description}</p>
+                <h2>{title}</h2>
+                <p className='subheader'>{location}</p>
+                <p className="section-description">{description}</p>
                 {
                     highlights ? <p className='highlights'>{highlights}</p> : <></>
                 }
                 <div>
                 {
-                    tech ? tech.map(t => <Tag content={t}/>) : <></>
+                    tech ? tech.map(t => <Tag key={t} content={t}/>) : <></>
                 }
                 </div>
             </div>

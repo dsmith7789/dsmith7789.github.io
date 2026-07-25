@@ -11,7 +11,7 @@ function Home() {
         document.title = "Home";
     }, []);
 
-    return <div>
+    return <div className="page-content">
         <TopBanner />
         <About />
         <Experience />

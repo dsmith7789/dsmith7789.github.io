@@ -5,6 +5,7 @@ function About() {
     return <div className="home-section">
         <h1>About</h1>
         <h4 className="subheader">Hi, I'm Dante!</h4>
+        <div className="about-copy">
         <p> I am an experienced engineering professional, currently working at Charter Communications (Spectrum) 
             in a technical rotational program, where I have the chance to learn from several software engineering teams 
             across the company. Over the past few years, I have been working to transition in my career to software 
@@ -31,6 +32,7 @@ function About() {
 
         <p> Please connect with me if you'd like to know more about my professional experience!
         </p>
+        </div>
     </div>
 }
 

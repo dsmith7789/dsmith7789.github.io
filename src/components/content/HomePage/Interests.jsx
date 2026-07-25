@@ -4,7 +4,7 @@ import './HomePage.css';
 function Interests() {
     return <div className="home-section">
         <h1>Interests</h1>
-        <ul>
+        <ul className="interest-list">
             <li>I like to learn as much as I can about programming and software engineering on the side as I can. For instance, 
                 I began "grinding Leetcode" in preparation for interviews, and now I try to solve the daily question as a fun brainteaser
                 (results pending on if this is an effective interview prep strategy though). You can find me on Leetcode here: 

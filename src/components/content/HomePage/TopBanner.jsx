@@ -4,14 +4,17 @@ import { Button } from "react-bootstrap";
 function TopBanner() {
     return (
         <div className="banner">
-            <img src="/images/Denver_Headshot.jpg" alt="headshot" className="banner-image" />
             <div className="banner-text">
-                    <h1>Dante Smith</h1>
-                    <p>Software Engineer</p>
-                    <a href="/documents/Dante_Smith_Resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <Button className="banner-button">Resume</Button>
-                    </a>
+                <p className="eyebrow">Software Engineer</p>
+                <h1>Dante Smith</h1>
+                <p className="banner-summary">
+                    Building dependable software, learning complex systems, and helping teams turn ideas into useful products.
+                </p>
+                <a href="/documents/Dante_Smith_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <Button className="banner-button">Resume</Button>
+                </a>
             </div>
+            <img src="/images/Denver_Headshot.jpg" alt="Dante Smith headshot" className="banner-image" />
         </div>
     );
 }

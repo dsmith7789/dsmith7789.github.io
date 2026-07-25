@@ -1,110 +1,235 @@
-/* Banner styles */
 .banner {
-    display: flex;                 /* Flexbox to align image and text side by side */
-    align-items: center;           /* Vertically center content */
-    justify-content: space-between;/* Push the text to the right */
-    background-color: #f0f0f0;     /* Light grey background */
-    padding: 20px;                 /* Padding inside the banner */
-    border-bottom: 1px solid #ddd; /* Optional: Add a light border at the bottom */
-    margin-bottom: 20px;           /* Space between the banner and the rest of the content */
+    align-items: center;
+    background:
+        linear-gradient(135deg, rgba(15, 118, 110, 0.12), rgba(194, 109, 58, 0.08)),
+        var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    margin: 2.5rem 0 2rem;
+    overflow: hidden;
+    padding: 3rem;
+    position: relative;
 }
 
-/* Image inside the banner */
+.banner::after {
+    background: var(--accent);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 8px;
+}
+
 .banner-image {
-    max-width: 150px;              /* Control the size of the image */
-    height: auto;                  /* Maintain aspect ratio */
-    margin-right: 20px;            /* Space between the image and text */
-    margin-left: 25%;
+    aspect-ratio: 1;
+    border: 8px solid rgba(255, 255, 255, 0.9);
     border-radius: 50%;
+    box-shadow: 0 22px 42px rgba(23, 33, 29, 0.16);
+    height: auto;
     object-fit: cover;
+    width: 100%;
 }
 
-/* Text inside the banner */
 .banner-text {
-    flex-basis: 25%;                       /* Allow the text to take up available space */
-    display: flex;                 /* Flexbox for the text container */
-    flex-direction: column;        /* Stack the text vertically */
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+}
+
+.eyebrow {
+    color: var(--warm);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    margin: 0 0 0.7rem;
+    text-transform: uppercase;
 }
 
 .banner-text h1 {
-    margin: 0;                     /* Remove default margin */
-    font-size: 24px;               /* Adjust the size of the heading */
+    color: var(--ink);
+    font-size: clamp(2.6rem, 7vw, 5.7rem);
+    font-weight: 850;
+    line-height: 0.95;
+    margin: 0;
 }
 
-.banner-text p {
-    margin: 5px 0;                 /* Adjust the spacing of the paragraph */
-    font-size: 16px;               /* Adjust the font size */
+.banner-summary {
+    color: var(--muted);
+    font-size: 1.12rem;
+    line-height: 1.65;
+    margin: 1.35rem 0 0;
+    max-width: 44rem;
 }
 
-/* Button below the text */
-.banner-button {
-    width: 25%;                   /* Button width is 50% of the text container */
-    margin-top: 20px;             /* Add some space above the button */
-    padding: 10px;
-    background-color: #007bff;
+.banner-button.btn {
+    background-color: var(--accent);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(15, 118, 110, 0.22);
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
+    font-weight: 750;
+    margin-top: 1.75rem;
+    min-width: 9rem;
+    padding: 0.8rem 1.15rem;
+}
+
+.banner-button.btn:hover,
+.banner-button.btn:focus {
+    background-color: var(--accent-dark);
+    color: white;
 }
 
 .home-section {
-    padding: 20px;                 /* Padding inside the banner */
-    margin: 20px;           /* Space between the banner and the rest of the content */
+    margin: 0 0 1.4rem;
+    padding: 1.8rem 0;
+}
+
+.home-section h1 {
+    color: var(--ink);
+    font-size: clamp(1.6rem, 3vw, 2.25rem);
+    font-weight: 820;
+    margin: 0 0 1.1rem;
+}
+
+.home-section h1::after {
+    background: var(--warm);
+    border-radius: 999px;
+    content: "";
+    display: block;
+    height: 4px;
+    margin-top: 0.55rem;
+    width: 3.5rem;
+}
+
+.about-copy {
+    color: #33413c;
+    font-size: 1.03rem;
+    line-height: 1.78;
+    max-width: 860px;
 }
 
 .subheader {
-    color: darkgrey;
+    color: var(--muted);
+    font-size: 0.94rem;
+    font-weight: 650;
+    margin: 0;
 }
 
 .highlights {
+    color: #42514c;
+    font-size: 0.94rem;
     font-style: italic;
-    font-size: small;
+    line-height: 1.6;
+    margin: 0.4rem 0 0;
 }
 
 .section {
-    display: flex;                 /* Flexbox to align image and text side by side */
     align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.74);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    display: flex;
+    gap: 1.15rem;
+    margin: 0 0 1rem;
+    padding: 1.1rem;
+    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.section:hover {
+    border-color: rgba(15, 118, 110, 0.36);
+    box-shadow: 0 14px 36px rgba(23, 33, 29, 0.08);
+    transform: translateY(-2px);
 }
 
 .section-content {
-    flex-basis: 92%;                       /* Allow the text to take up available space */
-    display: flex;                 /* Flexbox for the text container */
-    flex-direction: column;        /* Stack the text vertically */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.section-content h2 {
+    color: var(--ink);
+    font-size: 1.16rem;
+    font-weight: 780;
+    line-height: 1.25;
+    margin: 0 0 0.22rem;
 }
 
 .section-description {
+    color: #33413c;
+    line-height: 1.55;
+    margin: 0.35rem 0 0.6rem;
     white-space: pre-wrap;
-    margin-bottom: 10px;
-    line-height: 0.8;
 }
 
 .section-image {
-    height: auto;
-    width: 50px;
-    max-width: 75px;              /* Control the size of the image */
-    max-height: 75px;                  /* Maintain aspect ratio */
-    margin-right: 20px;            /* Space between the image and text */
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    height: 76px;
+    object-fit: contain;
+    padding: 0.45rem;
+    width: 76px;
 }
 
-/* For smaller screens */
+.interest-list {
+    display: grid;
+    gap: 0.85rem;
+    list-style: none;
+    margin: 0;
+    max-width: 920px;
+    padding: 0;
+}
+
+.interest-list li {
+    background: rgba(255, 255, 255, 0.72);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    color: #33413c;
+    line-height: 1.68;
+    padding: 1rem 1.15rem;
+}
+
 @media (max-width: 768px) {
     .banner {
-        flex-direction: column;    /* Stack the image and text vertically on small screens */
-        text-align: center;        /* Center text */
+        grid-template-columns: 1fr;
+        margin-top: 1.25rem;
+        padding: 1.6rem;
+        text-align: left;
     }
 
     .banner-image {
-        margin-right: 0;
-        margin-bottom: 20px;       /* Add spacing between the image and text */
-        max-width: 100px;          /* Resize the image */
+        grid-row: 1;
+        max-width: 190px;
     }
 
-    .banner-text {
-        text-align: center;        /* Center the text */
+    .section {
+        align-items: flex-start;
+    }
+
+    .section-image {
+        height: 60px;
+        width: 60px;
+    }
+}
+
+@media (max-width: 520px) {
+    .banner-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .section-image {
+        height: 64px;
+        width: 64px;
     }
 }
