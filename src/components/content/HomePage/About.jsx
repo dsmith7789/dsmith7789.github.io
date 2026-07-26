@@ -4,33 +4,36 @@ import './HomePage.css';
 function About() {
     return <div className="home-section">
         <h1>About</h1>
-        <h4 className="subheader">Hi, I'm Dante!</h4>
+        <h4 className="subheader">Software Engineer focused on cloud infrastructure, automation, and building reliable systems.</h4>
         <div className="about-copy">
-        <p> I am an experienced engineering professional, currently working at Charter Communications (Spectrum) 
-            in a technical rotational program, where I have the chance to learn from several software engineering teams 
-            across the company. Over the past few years, I have been working to transition in my career to software 
-            engineering roles, and a significant step in that process was earning my Master's degree in Computer Science. 
-            In my prior internship experience, I've learned a lot about programming, computer networking, 
-            configuration management, container orchestration, and Linux system administration. 
-            In the past, I worked in healthcare information technology as a technical solutions engineer at Epic, where I 
-            learned a lot about maintaining client relationships, handling escalations, using code to search databases 
-            and debug technical issues, and mentoring/advising newer staff. 
+        <p> Hi, I'm Dante!
         </p>
-        <p> In my coursework I've also gotten to work developing websites and applications, and have built up experience 
-            with several coding languages, including Python, Java, C, Javascript, HTML, and CSS. 
+        <p> 
+            I am a software engineer at Charter Communications (Spectrum), specializing in cloud infrastructure
+            and developer tooling. Through my role, I have worked across software engineering, cloud, and DevOps
+            teams, developing solutions involving Terraform, Kubernetes, CI/CD pipelines, and backend services.
         </p>
-        <p> In my work, I've also developed an enthusiasm for teaching others skills I've picked up and what they should 
-            watch out for. I've often found this is not only an effective way for learning but can also solidify my own 
-            understanding of a concept. At Epic, I served in many teaching roles, including as a mentor to new staff, 
-            an advisor to employees beginning to work with customers, and teaching classes about how functionalities in Epic 
-            worked.
+        
+        <p>
+            I hold a Master's degree in Computer Science from the University of Wisconsin–Madison, where I strengthened 
+            my foundation in software development, distributed systems, and computer architecture. Earlier in my career, 
+            I worked as a Technical Solutions Engineer at Epic Systems, supporting large healthcare systems and gaining 
+            experience in troubleshooting complex systems, database analysis, customer collaboration, and technical mentorship.
         </p>
 
-        <p> I'm excited to work in roles where I have a chance to develop and improve large scale systems/high impact 
-            products that consumers use on a daily basis, use my programming skills, and serve in some kind of mentor capacity.
+        <p>
+            A consistent theme throughout my work has been building tools that improve reliability and efficiency while helping 
+            others grow their technical skills. I have had opportunities to mentor new engineers, teach technical concepts, 
+            and support teams as they adopt new technologies.
         </p>
 
-        <p> Please connect with me if you'd like to know more about my professional experience!
+        <p>
+            My interests include building large-scale software systems, cloud platforms, automation, and developer 
+            productivity tools. I enjoy solving complex technical problems, learning new technologies, and contributing 
+            to engineering teams that value collaboration and continuous improvement.
+        </p>
+
+        <p> Feel free to connect if you'd like to know more about my experience or projects.
         </p>
         </div>
     </div>
